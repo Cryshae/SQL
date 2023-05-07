@@ -1,0 +1,20 @@
+ CREATE TABLE phones(id INTEGER primary key, name TEXT, Number_of_phones INTEGER);
+
+Insert into phones VALUES (1, "iphone 8", 2);
+Insert into phones VALUES (2, "iphone XR", 6);
+Insert into phones VALUES (3, "iphone 13", 12);
+
+Insert into phones VALUES (4, "iphone 14", 20);
+
+Insert into phones VALUES (5, "samsung galaxy", 4);
+
+Select * from phones 
+Where Number_of_phones >= 4
+ORDER BY number_of_phones desc;
+
+-- Display the database order by the number of phones
+Select * From phones
+Order by Number of Phones desc;
+
+Which iphone has more in stock?
+Select SUM from phones >= 2;
