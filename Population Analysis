@@ -15,4 +15,8 @@ Order By population_growth desc;
 
 -- Display database order by Top Countries
 -- Which continent has a higher population growth rate
--- Select SUM from continents desc;
+-- Select * from Top_Countries
+  Order by Continents
+  
+  --Which continent has the highest population growth
+  Select SUM from continents >= .02% desc;
