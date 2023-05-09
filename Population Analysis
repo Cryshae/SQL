@@ -1,0 +1,18 @@
+CREATE TABLE Top_Countries (id integer primary key, name TEXT, continent TEXT, population INTEGER, population_growth INTEGER);
+
+Insert into Top_Countries VALUES (1, "China", 'asia', 1439323776, "0.1%");
+Insert into Top_Countries Values (2, "India", 'asia', 1380004385, "0.8%");
+Insert into Top_Countries Values (3, "unites states of america",'north america', 3310026551, "0.1%");
+Insert into Top_countries Values (4, "indonesia", 'asia', 273523615, "2%");
+Insert into Top_Countries Values (5, "pakistan", 'asia', 220892340, "1.8%");
+Insert into Top_Countries Values (6, "Brazil", 'south america', 212559417, "0.5%");
+
+SELECT * FROM Top_Countries;
+
+SELECT * FROM Top_Countries
+Where continent = "asia"
+Order By population_growth desc;
+
+-- Display database order by Top Countries
+-- Which continent has a higher population growth rate
+-- Select SUM from continents desc;
