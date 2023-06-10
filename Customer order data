@@ -48,6 +48,10 @@ Where Feb.Quantity>2
 And Length(orderid) = 6
 And orderid <> 'Order ID';
 
+#8. List all the products sold in Los Angeles, and how many were sold
+Select product, sum(quantity) from BIT_DB.FebSales
+Where location like '%Los Angeles%'
+Group by Product;
 
 
 
